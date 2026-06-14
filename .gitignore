@@ -1,4 +1,4 @@
-﻿# IDE & System
+# IDE & System
 .idea/
 .vscode/
 .DS_Store
@@ -23,6 +23,7 @@ GEMINI.md
 node_modules/
 dist/
 .env*
+!.env.example
 railway-env.local
 
 # Documents & Artifacts

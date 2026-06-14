@@ -110,6 +110,6 @@ export function getImageUrl(path?: string): string | undefined {
   if (path.startsWith('http') || path.startsWith('file://')) return path;
 
   // 2. Trỏ thẳng về endpoint serve file (proxy) của BE thay vì S3 trực tiếp (vì S3 private)
-  const baseUrl = process.env.EXPO_PUBLIC_SERVER_URL || "https://zalo-fullstack-app-production.up.railway.app/api/v1";
+  const baseUrl = process.env.EXPO_PUBLIC_SERVER_URL || "http://localhost:8080/api/v1";
   return `${baseUrl}/message/media/${path}`;
 }
