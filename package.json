@@ -4,7 +4,10 @@
   "description": "Root configuration and setup for Zalo Clone Fullstack with MongoDB Atlas integration",
   "main": "init-mongo-atlas.ts",
   "scripts": {
-    "db:init": "ts-node init-mongo-atlas.ts"
+    "db:init": "ts-node init-mongo-atlas.ts",
+    "dev:web": "npm --prefix client/web run dev",
+    "dev:mobile": "npm --prefix client/mobile run start",
+    "dev:backend": "cd backend && ./mvnw spring-boot:run"
   },
   "dependencies": {
     "dotenv": "^16.4.5",

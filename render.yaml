@@ -1,0 +1,57 @@
+# Render Blueprint Specification
+# See https://render.com/docs/blueprints for more information.
+services:
+  - type: web
+    name: zalo-backend
+    env: docker
+    dockerfilePath: backend/Dockerfile
+    dockerContext: backend
+    plan: free # Change to standard/starter if needed
+    branch: main
+    numInstances: 1
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      # Database Connection Details (plug in your MySQL database details)
+      - key: SPRING_DATASOURCE_URL
+        value: "jdbc:mysql://${DB_HOST}:${DB_PORT}/${DB_NAME}?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=Asia/Ho_Chi_Minh&characterEncoding=UTF-8&createDatabaseIfNotExist=true"
+      - key: DB_HOST
+        sync: false
+      - key: DB_PORT
+        value: "3306"
+      - key: DB_NAME
+        value: "zalo_clone"
+      - key: DB_USERNAME
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      # Redis Connection (plug in your Redis URL)
+      - key: REDIS_URL
+        sync: false
+      # Auth JWT Secret
+      - key: JWT_SECRET
+        generateValue: true
+      # Groq AI Service Key
+      - key: GROQ_API_KEY
+        sync: false
+      # Cloudflare R2 Media Storage
+      - key: R2_ACCESS_KEY_ID
+        sync: false
+      - key: R2_SECRET_ACCESS_KEY
+        sync: false
+      - key: R2_BUCKET
+        value: "zalo-media"
+      - key: R2_REGION
+        value: "auto"
+      - key: R2_ENDPOINT
+        sync: false
+      # Brevo Email Service
+      - key: BREVO_API_KEY
+        sync: false
+      - key: BREVO_SENDER_EMAIL
+        sync: false
+      - key: BREVO_SENDER_NAME
+        value: "Zalo Clone"
