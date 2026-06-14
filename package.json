@@ -1,0 +1,18 @@
+{
+  "name": "zalo-clone-fullstack-root",
+  "version": "1.0.0",
+  "description": "Root configuration and setup for Zalo Clone Fullstack with MongoDB Atlas integration",
+  "main": "init-mongo-atlas.ts",
+  "scripts": {
+    "db:init": "ts-node init-mongo-atlas.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

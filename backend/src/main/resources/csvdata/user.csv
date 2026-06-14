@@ -1,0 +1,11 @@
+id,first_name,last_name,email,password,is_online,last_seen,keycloak_id,created_date,last_modified_date
+141f9625-53f3-4545-b36e-c4d63ff3cbae,An,Nguyen,an.nguyen@gmail.com,$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy,1,2026-03-15 09:16:12,,2026-02-13 09:16:12,2026-03-15 09:16:12
+9a5e2000-2802-467e-b4ed-7a945d13c597,Binh,Tran,binh.tran@gmail.com,$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy,1,2026-03-15 08:16:12,,2026-02-14 09:16:12,2026-03-14 09:16:12
+0b36a39c-901b-4392-ba68-f0093401c0ab,Chau,Le,chau.le@gmail.com,$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy,1,2026-03-15 07:16:12,,2026-02-15 09:16:12,2026-03-13 09:16:12
+5888d180-c41e-41e9-b651-13bb2577e753,Dung,Pham,dung.pham@gmail.com,$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy,0,2026-03-15 06:16:12,,2026-02-16 09:16:12,2026-03-12 09:16:12
+07ca6053-bd7f-49c2-b858-2dd53da73edb,Em,Hoang,em.hoang@gmail.com,$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy,0,2026-03-15 05:16:12,,2026-02-17 09:16:12,2026-03-11 09:16:12
+7dec9701-81d1-4876-98ab-36daa4a99d58,Phuc,Vo,phuc.vo@gmail.com,$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy,0,2026-03-15 04:16:12,,2026-02-18 09:16:12,2026-03-10 09:16:12
+5047bce0-6ac6-41e5-85b6-391167851466,Giang,Dang,giang.dang@gmail.com,$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy,0,2026-03-15 03:16:12,,2026-02-19 09:16:12,2026-03-09 09:16:12
+301d30ad-9394-4e21-9714-76b151637a3f,Hoa,Bui,hoa.bui@gmail.com,$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy,0,2026-03-15 02:16:12,,2026-02-20 09:16:12,2026-03-08 09:16:12
+46c4b8db-ee45-4b0f-9198-2ee836a13138,Kiet,Do,kiet.do@gmail.com,$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy,0,2026-03-15 01:16:12,,2026-02-21 09:16:12,2026-03-07 09:16:12
+1df85ace-1429-491e-b0ee-d13471501f34,Lan,Ngo,lan.ngo@gmail.com,$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy,0,2026-03-15 00:16:12,,2026-02-22 09:16:12,2026-03-06 09:16:12

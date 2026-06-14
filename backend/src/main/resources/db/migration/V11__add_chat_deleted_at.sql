@@ -1,0 +1,3 @@
+ALTER TABLE chat
+    ADD COLUMN deleted_at_by_user1 DATETIME NULL DEFAULT NULL,
+    ADD COLUMN deleted_at_by_user2 DATETIME NULL DEFAULT NULL;

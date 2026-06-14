@@ -1,0 +1,75 @@
+{
+  "expo": {
+    "name": "Zalo Clone",
+    "slug": "Zalo-Clone",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/images/icon.png",
+    "scheme": "zalo-clone",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ZaloClone.driver",
+      "config": {}
+    },
+    "android": {
+      "package": "com.zaloclone.mobile",
+      "edgeToEdgeEnabled": true,
+      "usesCleartextTraffic": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "config": {}
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "server",
+      "favicon": "./src/assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://Zalo.com/"
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./src/assets/images/splash.png",
+          "resizeMode": "cover",
+          "backgroundColor": "#ffffff",
+          "android": {
+            "splash": {
+              "image": "./src/assets/images/splash.png",
+              "resizeMode": "cover",
+              "backgroundColor": "#ffffff"
+            }
+          }
+        }
+      ],
+      [
+        "@stripe/stripe-react-native",
+        {
+          "merchantIdentifier": "merchant.com.uber",
+          "bundleIdentifier": "com.ZaloClone"
+        }
+      ],
+      "expo-secure-store",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": "https://Zalo.com/"
+      },
+      "eas": {
+        "projectId": "2e0156f6-8783-4fd0-b3ca-5c2bbcc13457"
+      }
+    }
+  }
+}

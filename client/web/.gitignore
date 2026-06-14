@@ -1,0 +1,48 @@
+# ── Dependencies ─────────────────────────────────────
+node_modules/
+CLAUDE.md
+*.claude.md
+# ── Build output ─────────────────────────────────────
+dist/
+dist-ssr/
+build/
+
+# ── Environment / secrets ────────────────────────────
+.env
+.env.*
+*.local
+
+# ── Logs ─────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ── Cache ────────────────────────────────────────────
+.cache/
+.parcel-cache/
+.vite/
+
+# ── Test coverage ────────────────────────────────────
+coverage/
+
+# ── TypeScript ───────────────────────────────────────
+*.tsbuildinfo
+
+# ── IDE / Editor ─────────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ── OS ───────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini

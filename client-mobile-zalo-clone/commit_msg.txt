@@ -1,0 +1,7 @@
+fix: real-time new chat appears instantly without reload
+
+- SocketContext: when receiving message for unknown chat, fetch getChatById
+  to get full chat details, then insert directly into ['chats'] cache
+  (no more invalidateQueries which requires reload)
+- Subscribe to /topic/chat/{chatId} immediately for new chats
+- Import getChatById from api/chat

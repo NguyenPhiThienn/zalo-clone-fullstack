@@ -1,0 +1,55 @@
+﻿# IDE & System
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+.claude/
+CLAUDE.md
+GEMINI.md
+.gemini/
+*.cache
+
+# Mobile (Android)
+**/build/
+**/.gradle/
+**/local.properties
+*.iml
+
+# Backend (Maven)
+**/target/
+*.class
+
+# Node.js (Web)
+node_modules/
+dist/
+.env*
+railway-env.local
+
+# Documents & Artifacts
+/report*
+*.pdf
+*.docx
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.out
+*.fdb_latexmk
+*.fls
+*.pytxcode
+*.tex
+latexmkrc
+
+# Images & Screenshots
+*.png
+*.jpg
+*.jpeg
+*.drawio.pdf
+
+# Tools
+plantuml.jar
+plantuml.sty
+compile.bat
+compile_linux.sh
+

@@ -1,0 +1,73 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "submit": "Submit",
+    "back": "Back",
+    "next": "Next",
+    "done": "Done",
+    "search": "Search",
+    "status": "Status",
+    "continue": "Continue"
+  },
+  "auth": {
+    "welcome": "Welcome",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "dontHaveAccount": "Don't have an account?",
+    "alreadyHaveAccount": "Already have an account?",
+    "createAccount": "Create Account"
+  },
+  "chat": {
+    "title": "Messages",
+    "lastSeen": "Last seen",
+    "online": "Active now",
+    "typing": "Typing...",
+    "placeholder": "Message",
+    "deleteMessage": "Delete message",
+    "copyMessage": "Copy",
+    "reply": "Reply",
+    "forward": "Forward",
+    "deletedMessage": "Message deleted"
+  },
+  "home": {
+    "title": "Messages",
+    "contacts": "Contacts",
+    "discover": "Discover",
+    "profile": "Profile",
+    "searchPlaceholder": "Find friends, messages..."
+  },
+  "profile": {
+    "profile": "Profile",
+    "logout": "Logout",
+    "editProfile": "Edit Profile",
+    "personalInfo": "Personal Info",
+    "name": "Full Name",
+    "phone": "Phone",
+    "email": "Email",
+    "settings": "Settings",
+    "language": "Language",
+    "notifications": "Notifications",
+    "privacy": "Privacy",
+    "help": "Help & Support"
+  },
+  "errors": {
+    "somethingWentWrong": "Something went wrong",
+    "networkError": "Network error. Please check your connection",
+    "invalidInput": "Invalid input",
+    "required": "This field is required",
+    "tryAgain": "Please try again",
+    "authRequired": "Please sign in again to continue"
+  }
+}

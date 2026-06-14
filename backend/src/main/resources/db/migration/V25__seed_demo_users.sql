@@ -1,0 +1,60 @@
+-- Seed 50 demo users
+-- 2 user cụ thể: m0tnamk08@gmail.com, thaiphat07031509@gmail.com (password: 123456)
+-- 48 user ngẫu nhiên (password: 123456)
+-- BCrypt hash của "123456": $2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte
+
+INSERT IGNORE INTO `user`
+(id, first_name, last_name, email, password, is_online, role, banned, email_verified, token_version, created_date, last_modified_date)
+VALUES
+-- 2 user cụ thể
+('a1000001-0000-0000-0000-000000000001', 'Motna', 'MK08',     'm0tnamk08@gmail.com',          '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('a1000002-0000-0000-0000-000000000002', 'Thai',  'Phat',     'thaiphat07031509@gmail.com',   '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+-- 48 user ngẫu nhiên
+('4f767afe-f60a-4ef5-b372-92fe1657e033', 'An',     'Nguyễn', 'user01@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('4dd28e6e-402a-4a76-9c7a-a58b389bc998', 'Bình',   'Trần',   'user02@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('7a768cc9-d4a8-45e5-a2fe-0560190e57f1', 'Châu',   'Lê',     'user03@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('b8e7c5b4-b67f-47be-8494-71341e38bcc5', 'Dung',   'Phạm',   'user04@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('259fd458-4ad9-42fc-b5ac-a13758eafc5d', 'Em',     'Hoàng',  'user05@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('aeee19e8-c273-4a99-a576-e66612b49234', 'Phát',   'Huỳnh',  'user06@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('05c1a510-844f-4ca8-bb6c-4771f4d317a0', 'Giang',  'Phan',   'user07@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('3146a961-7435-4981-9c4f-e2c0dff4e62e', 'Hoa',    'Vũ',     'user08@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('2ca42511-aa92-4909-8b7a-1b36f6697ff6', 'Iris',   'Võ',     'user09@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('b95e4d2a-2185-492f-97f2-5dc205490272', 'Khánh',  'Đặng',   'user10@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('19a65933-71b6-4a49-a36f-bc526cc39eb7', 'Lan',    'Bùi',    'user11@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('66f6c836-5050-49f2-9d85-bf0020e03ffc', 'Minh',   'Đỗ',     'user12@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('5a5506e6-4eb2-4c4b-9755-5301a0dfd93c', 'Nam',    'Hồ',     'user13@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('df2bcf1e-11ef-4aab-948a-f03348c60a3b', 'Oanh',   'Ngô',    'user14@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('1518a707-bfc7-4aa9-9181-06455c3e84f0', 'Phương', 'Dương',  'user15@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('64b351db-1991-42d4-aed0-cf721ca56c12', 'Quân',   'Lý',     'user16@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('9d14144b-81df-4152-b085-77bac96fa561', 'Rồng',   'Nguyễn', 'user17@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('5f1c7ad5-9531-424b-8603-56d7d48cc308', 'Sơn',    'Trần',   'user18@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('d60027b7-9936-4e35-9a84-1e82d94050a8', 'Tâm',    'Lê',     'user19@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('bc820cfc-9461-4865-94fc-a4afc7a766aa', 'Uyên',   'Phạm',   'user20@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('19b358a5-a10a-442a-92cb-8cc9262655ca', 'Vinh',   'Hoàng',  'user21@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('c89f94c8-cd73-41aa-80b4-4204b56b8011', 'Xuân',   'Huỳnh',  'user22@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('86eab75a-9908-46b9-9a47-0a7853dc9a28', 'Yến',    'Phan',   'user23@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('240c4c5f-3746-4448-891f-d8bb3b9d8505', 'Zhi',    'Vũ',     'user24@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('8cb70988-351c-4998-afaf-a9a7cd545973', 'Anh',    'Võ',     'user25@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('59f7453a-d90a-4659-a1fd-f0963eb4157f', 'Bảo',    'Đặng',   'user26@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('7201e5ff-ea4b-4da7-90c8-6f450d690b21', 'Cường',  'Bùi',    'user27@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('8133f6d1-25e9-4411-bd63-8368e30f075c', 'Dũng',   'Đỗ',     'user28@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('3ebdcd20-c7e4-4e8f-a206-99e983e76b57', 'Đức',    'Hồ',     'user29@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('05aba746-c572-4fa3-9da5-dd1f5311dcc3', 'Hiếu',   'Ngô',    'user30@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('b08314d6-79bc-4d0a-b685-0b3a66cfa4cc', 'Hùng',   'Dương',  'user31@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('5b297e0c-b01e-4f0b-9a42-8bb180bf1af6', 'Khoa',   'Lý',     'user32@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('509992c9-946f-4e29-b6db-c323db9c3128', 'Long',   'Nguyễn', 'user33@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('608beece-a084-4543-a263-6937b64d5b93', 'Mạnh',   'Trần',   'user34@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('5a9964ee-45b8-4cb3-ad15-17b63690672c', 'Nghĩa',  'Lê',     'user35@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('a37f5fa8-cad5-47ee-944a-ab4a7766a622', 'Nhân',   'Phạm',   'user36@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('205efb6f-a940-486c-a0d3-e217d84ab76f', 'Phong',  'Hoàng',  'user37@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('484b363c-942c-4d8d-bba6-8fec01531f7c', 'Quốc',   'Huỳnh',  'user38@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('6f441604-644e-40bf-a98e-be26eaf62722', 'Thành',  'Phan',   'user39@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('402804f7-2e23-4400-a768-6ba049d67a67', 'Trung',  'Vũ',     'user40@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('a44a6b23-ec53-4f45-b1ad-eef8ed91db28', 'Tuấn',   'Võ',     'user41@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('8edfd842-da60-4b21-adcd-443184e33d43', 'Việt',   'Đặng',   'user42@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('14cecb1f-4780-4f94-807d-90e2f00a2670', 'Vũ',     'Bùi',    'user43@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('86efb56b-4889-4fed-bf9c-402f192675f0', 'Đạt',    'Đỗ',     'user44@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('f0c3c3ac-ab04-4e62-9157-bbbadfeb9693', 'Hải',    'Hồ',     'user45@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('6fa98e91-bb55-425a-ad09-6919d6942fad', 'Kiên',   'Ngô',    'user46@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('4cd36cb0-d579-4637-9399-8235f93d29a2', 'Lâm',    'Dương',  'user47@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW()),
+('1ec6aab3-ec7b-4c63-b34c-14de28544b07', 'Tùng',   'Lý',     'user48@demo.com', '$2b$10$YRdWutYuelZDSqRiAFQ55uvFfCBKhtu1OobaxOd.dMdVU3hyUgWte', 0, 'USER', 0, 1, 1, NOW(), NOW());

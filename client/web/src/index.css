@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: #f0f2f5;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  text-align: left;
+  border-inline: none;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a0a0a0;
+}
+
+.message-bubble img {
+  max-width: 240px;
+  max-height: 240px;
+  border-radius: 8px;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.message-bubble video {
+  max-width: 240px;
+  max-height: 240px;
+  border-radius: 8px;
+}
+
+.typing-dot {
+  animation: typingBounce 1.2s infinite ease-in-out;
+}
+
+.typing-dot:nth-child(1) { animation-delay: 0s; }
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes typingBounce {
+  0%, 60%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-6px); }
+}
+
+@keyframes messageHighlight {
+  0%   { background-color: rgba(253, 224, 71, 0.55); }
+  70%  { background-color: rgba(253, 224, 71, 0.55); }
+  100% { background-color: transparent; }
+}
+
+.message-highlight {
+  animation: messageHighlight 2s ease-out forwards;
+  border-radius: 12px;
+}

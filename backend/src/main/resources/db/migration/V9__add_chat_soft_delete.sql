@@ -1,0 +1,3 @@
+ALTER TABLE chat
+    ADD COLUMN deleted_by_user1 TINYINT(1) NOT NULL DEFAULT 0,
+    ADD COLUMN deleted_by_user2 TINYINT(1) NOT NULL DEFAULT 0;
